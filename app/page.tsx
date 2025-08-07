@@ -1,8 +1,8 @@
-// import './assets/styles/globals.css';
+import React from 'react'
 
 const Homepage = () => {
   return (
-    <main className="text-bold underline">Homepage <br />Sumkam</main>
+    <div className="flex min-h-screen flex-col items-center justify-between p-24">Homepage</div>
   )
 }
 
