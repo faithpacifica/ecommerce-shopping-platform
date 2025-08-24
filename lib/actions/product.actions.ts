@@ -3,8 +3,8 @@
 import { PrismaClient } from '@prisma/client';
 import { convertToPlainObject } from '../utils';
 import { LATEST_PRODUCTS_LIMIT } from '../constants';
-// get latest products
 
+// get latest products
 export async function getLatestProducts() {
 	const prisma = new PrismaClient();
 
@@ -14,5 +14,5 @@ export async function getLatestProducts() {
 			createdAt: 'desc',
 		},
 	});
-	return convertToPlainObject(data); //prisma object
+	return convertToPlainObject(data); //prisma object dan oddiy objectga o'tkazish uchun
 }
